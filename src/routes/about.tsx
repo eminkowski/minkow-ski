@@ -1,12 +1,22 @@
-import { ABOUT_FOCUS, ABOUT_PARAGRAPHS, ABOUT_SIDE_PROJECTS_AFTER, ABOUT_SIDE_PROJECTS_BEFORE, SKILLS, STACK_INTRO } from '../data/about'
 import {
+  ABOUT_FOCUS,
+  ABOUT_SECTIONS,
+  ABOUT_SIDE_PROJECTS_AFTER,
+  ABOUT_SIDE_PROJECTS_BEFORE,
+  SKILLS,
+  STACK_INTRO,
+} from '../data/about'
+import {
+  BodyText,
   BulletList,
   Card,
   EmailIcon,
   ExternalLink,
+  GitHubIcon,
   LinkedInIcon,
   LinkArrow,
   PageGrid,
+  Section,
   TagList,
 } from '../components/ui'
 import { label, textClass } from '../lib/styles'
@@ -15,21 +25,24 @@ import { SITE } from '../lib/site'
 export function About() {
   return (
     <PageGrid>
-      <Card className="sm:col-span-2">
-        <p className={label}>About</p>
-        {ABOUT_PARAGRAPHS.map(paragraph => (
-          <p key={paragraph.slice(0, 32)} className={`${textClass.secondary} leading-7 text-sm`}>
-            {paragraph}
-          </p>
-        ))}
-        <p className={`${textClass.secondary} leading-7 text-sm`}>
-          {ABOUT_SIDE_PROJECTS_BEFORE}
-          <ExternalLink href={SITE.studio} variant="inline">
-            {SITE.studioName}
-          </ExternalLink>
-          {ABOUT_SIDE_PROJECTS_AFTER}
-        </p>
-      </Card>
+      {ABOUT_SECTIONS.map(section => (
+        <Card key={section.title} className="sm:col-span-2">
+          <Section title={section.title}>
+            {section.paragraphs.map(paragraph => (
+              <BodyText key={paragraph.slice(0, 48)}>{paragraph}</BodyText>
+            ))}
+            {section.title === "What I'm looking for" ? (
+              <BodyText>
+                {ABOUT_SIDE_PROJECTS_BEFORE}
+                <ExternalLink href={SITE.studio} variant="inline">
+                  {SITE.studioName}
+                </ExternalLink>
+                {ABOUT_SIDE_PROJECTS_AFTER}
+              </BodyText>
+            ) : null}
+          </Section>
+        </Card>
+      ))}
 
       <Card>
         <p className={label}>Focus</p>
@@ -60,6 +73,14 @@ export function About() {
           >
             <LinkedInIcon className="text-white/60" />
             LinkedIn <LinkArrow />
+          </ExternalLink>
+          <ExternalLink
+            href={SITE.github}
+            variant="contact"
+            className="flex items-center gap-2"
+          >
+            <GitHubIcon className="text-white/60" />
+            GitHub <LinkArrow />
           </ExternalLink>
         </div>
       </Card>

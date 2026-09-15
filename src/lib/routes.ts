@@ -6,6 +6,7 @@ export const ROUTES = {
   projectsWorksurface: '/projects/worksurface-ui',
   projectsAgentEvalHarness: '/projects/agent-eval-harness',
   projectsTemporalCaseflow: '/projects/temporal-caseflow',
+  projectsFreedomListSync: '/projects/freedom-list-sync',
   about: '/about',
 } as const
 

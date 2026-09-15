@@ -10,7 +10,7 @@ interface ProjectCardProps {
 
 export function ProjectCard({ project }: ProjectCardProps) {
   return (
-    <Card className="h-full">
+    <Card className={project.wide ? 'h-full sm:col-span-2' : 'h-full'}>
       <div className="flex flex-col gap-2 sm:flex-row sm:items-start sm:justify-between sm:gap-4">
         <p className={label}>{UI_LABELS.project}</p>
         <div className="flex flex-wrap gap-x-3 gap-y-1">

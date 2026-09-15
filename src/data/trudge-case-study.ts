@@ -28,7 +28,7 @@ export const TRUDGE_CASE_STUDY = {
     'Privacy-first mobile companion for sensitive personal data. Local-first architecture, client-side encryption, and a thin API that never handles readable user content.',
   tags: ['React Native', 'TypeScript', 'Hono', 'PostgreSQL', 'OpenAPI', 'Monorepo'],
   listDescription:
-    'Privacy-first mobile product for sensitive personal data. The app uses local encrypted storage, a thin API that never sees readable user content, and a TypeScript monorepo with 950+ tests. I owned the product end to end.',
+    'Privacy-first mobile product for sensitive personal data. It keeps readable user content off the server, uses encrypted local storage, and is backed by 950+ automated tests.',
   url: SITE.trudge,
   role: {
     title: 'Founder / lead engineer',

@@ -8,6 +8,7 @@ import { ProjectsSupportDesk } from './routes/projects-support-desk'
 import { ProjectsWorksurface } from './routes/projects-worksurface'
 import { ProjectsAgentEvalHarness } from './routes/projects-agent-eval-harness'
 import { ProjectsTemporalCaseflow } from './routes/projects-temporal-caseflow'
+import { ProjectsFreedomListSync } from './routes/projects-freedom-list-sync'
 import { About } from './routes/about'
 
 const rootRoute = createRootRoute({ component: Root })
@@ -54,6 +55,12 @@ const projectsTemporalCaseflowRoute = createRoute({
   component: ProjectsTemporalCaseflow,
 })
 
+const projectsFreedomListSyncRoute = createRoute({
+  getParentRoute: () => rootRoute,
+  path: ROUTES.projectsFreedomListSync,
+  component: ProjectsFreedomListSync,
+})
+
 const aboutRoute = createRoute({
   getParentRoute: () => rootRoute,
   path: ROUTES.about,
@@ -68,6 +75,7 @@ const routeTree = rootRoute.addChildren([
   projectsWorksurfaceRoute,
   projectsAgentEvalHarnessRoute,
   projectsTemporalCaseflowRoute,
+  projectsFreedomListSyncRoute,
   aboutRoute,
 ])
 

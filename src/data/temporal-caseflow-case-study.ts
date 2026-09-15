@@ -9,7 +9,7 @@ export const TEMPORAL_CASEFLOW_CASE_STUDY = {
     'TypeScript Temporal workflows with activity retries, approval signals, status queries, SLA escalation, a Fastify API, and a separate worker process.',
   tags: ['TypeScript', 'Temporal', 'Fastify', 'Node.js', 'Workflows'],
   listDescription:
-    'Durable support-case lifecycle with Temporal: flaky triage with retries, human approve/reject signals, SLA escalation, and queryable workflow status across worker restarts.',
+    'Durable support-case workflow built with Temporal. It handles retries, human approval steps, SLA escalation, and worker restarts without losing workflow state.',
   repo: SITE.temporalCaseflowRepo,
   role: {
     title: 'Solo build',

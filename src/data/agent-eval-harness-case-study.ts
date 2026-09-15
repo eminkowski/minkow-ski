@@ -17,7 +17,7 @@ export const AGENT_EVAL_HARNESS_CASE_STUDY = {
     'Companion CLI to Support Desk MCP. Structural assertions and fixture replay gate agent writes in CI - no LLM in the default path.',
   tags: ['TypeScript', 'CI', 'MCP', 'Zod', 'Vitest', 'Monorepo', 'CLI'],
   listDescription:
-    'CI companion to Support Desk MCP. Gates agent tool choice, ordering, and write confirmation so unsafe runs fail the build before production.',
+    'CI companion for agent-driven tooling. It checks tool selection and execution order, and blocks unsafe write behavior before changes reach production.',
   repo: SITE.agentEvalHarnessRepo,
   pairedCaseStudy: ROUTES.projectsSupportDesk,
   pairedLabel: 'Support Desk MCP',

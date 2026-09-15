@@ -3,7 +3,7 @@ import { ROUTES, type AppRoute } from './routes'
 export const SITE = {
   name: 'Eric Minkowski',
   domain: 'minkow.ski',
-  title: 'Lead Software Engineer',
+  title: 'Lead / Staff Software Engineer',
   email: 'eric@minkow.ski',
   github: 'https://github.com/eminkowski',
   githubHandle: 'eminkowski',
@@ -18,6 +18,7 @@ export const SITE = {
   worksurfaceRepo: 'https://github.com/eminkowski/worksurface-ui',
   agentEvalHarnessRepo: 'https://github.com/eminkowski/agent-eval-harness',
   temporalCaseflowRepo: 'https://github.com/eminkowski/temporal-caseflow',
+  freedomListSyncRepo: 'https://github.com/eminkowski/freedom-list-sync',
 } as const
 
 export function pageTitle(pathname: string): string {
@@ -32,5 +33,6 @@ const PAGE_TITLES: Record<AppRoute, string> = {
   [ROUTES.projectsWorksurface]: `Worksurface UI | ${SITE.domain}`,
   [ROUTES.projectsAgentEvalHarness]: `Agent Eval Harness | ${SITE.domain}`,
   [ROUTES.projectsTemporalCaseflow]: `Temporal Caseflow | ${SITE.domain}`,
+  [ROUTES.projectsFreedomListSync]: `Freedom List Sync | ${SITE.domain}`,
   [ROUTES.about]: `About | ${SITE.domain}`,
 }

@@ -41,7 +41,7 @@ export const SUPPORT_DESK_CASE_STUDY = {
     'Monorepo',
   ],
   listDescription:
-    'Dense support-operations workspace where browser and MCP actions share one case history. Includes queue workflows, agent-proposed writes, human confirmation, and a unified audit trail.',
+    'Support-operations workspace that brings browser workflows and MCP actions into one case history. Agent-proposed writes require human confirmation and everything is recorded in a unified audit trail.',
   repo: SITE.supportDeskRepo,
   pairedCaseStudy: ROUTES.projectsAgentEvalHarness,
   pairedLabel: 'Agent Eval Harness',

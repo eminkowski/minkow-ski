@@ -54,7 +54,7 @@ export const WORKSURFACE_CASE_STUDY = {
     'Design system',
   ],
   listDescription:
-    'React system for dense operational interfaces: semantic tokens, layout primitives, accessible overlays, and a typed review contract for agent-proposed writes. Extracted from Support Desk MCP and exercised through fictional Relay Operations examples.',
+    'Reusable React system for dense operational interfaces. It provides shared layout primitives and interaction patterns that stay clear in dense operational workflows.',
   repo: SITE.worksurfaceRepo,
   pairedCaseStudy: ROUTES.projectsSupportDesk,
   pairedLabel: 'Support Desk MCP',

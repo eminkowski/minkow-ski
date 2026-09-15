@@ -33,7 +33,7 @@ export const HOME_PROJECTS_BLURB =
   'Selected work across product engineering, agent workflows, design systems, and durable orchestration.'
 
 export const HOME_INTRO =
-  'Lead full-stack engineer with 20 years of experience building B2B SaaS products, backend systems, frontend architecture, and AWS infrastructure. Recent work focuses on AI-assisted engineering tools, auditability, privacy-first product design, and systems that make messy workflows easier to understand, use, and maintain.'
+  'Lead full-stack engineer with 20 years of experience building and modernizing B2B SaaS platforms across React, TypeScript, Node.js, AWS, APIs, and distributed systems. I’ve led major platform and architecture initiatives, established engineering patterns used across teams, managed and mentored engineers, and remained hands-on with design and implementation. My work spans product engineering, frontend architecture, backend services, cloud infrastructure, and complex enterprise workflows.'
 
 export const HOME_STATUS = 'Available for remote roles'
 
@@ -43,11 +43,11 @@ export const TRUDGE_BLURB =
   'Privacy-first mobile product with encrypted local storage, multilingual content, and a TypeScript monorepo backed by 950+ tests.'
 
 export const HOME_FOCUS = [
-  'System Architecture',
-  'API Design',
-  'Performance Engineering',
-  'Full-Stack Development',
-  'Technical Leadership',
+  'Full-stack product engineering',
+  'Backend and distributed systems',
+  'Frontend architecture',
+  'Platform / DevEx',
+  'Technical leadership',
 ] as const
 
 export const HOME_METRICS_LABEL = 'Experience'
@@ -55,7 +55,7 @@ export const HOME_METRICS_LABEL = 'Experience'
 export const METRICS = [
   { value: '20', label: 'yrs exp' },
   { value: '6', label: 'companies' },
-  { value: '10', label: 'engineers led' },
+  { value: '10', label: 'engineers led across teams' },
 ] as const
 
 interface HomeTileLayout {
